@@ -1,0 +1,149 @@
+.header {
+  background-color: #fff; /* White background */
+  padding: 20px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  border-bottom: 1px solid #eee; /* Light border */
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header .logo a {
+  font-size: 1.6rem; /* Slightly larger logo */
+  font-weight: 700; /* Bold font weight */
+  color: #e44d26; /* Primary color logo */
+  text-decoration: none;
+}
+
+.header .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; /* Vertically align navigation items */
+}
+
+.header .navigation li {
+  margin-left: 25px; /* Increased spacing */
+}
+
+.header .navigation li:first-child {
+  margin-left: 0;
+}
+
+.header .navigation li a {
+  text-decoration: none;
+  color: #333; /* Darker navigation text */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px 15px; /* Padding for better click area */
+  border-radius: 5px; /* Rounded corners for nav links */
+}
+
+.header .navigation li a:hover,
+.header .navigation li a.active {
+  color: #e44d26; /* Highlight color on hover/active */
+  background-color: #f8f8f8; /* Light background on hover/active */
+}
+
+.header .search-box {
+  display: flex;
+  align-items: center;
+  margin-left: 30px; /* Space between nav and search */
+}
+
+.header .search-box input[type="text"] {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  margin-right: 0;
+  width: 280px; /* Slightly wider search box */
+  font-size: 1rem;
+  color: #555;
+}
+
+.header .search-box button {
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.header .search-box button:hover {
+  background-color: #c83b1a;
+}
+
+.header .contact-button {
+  margin-left: auto; /* Push to the right */
+}
+
+.header .contact-button button {
+  background-color: #e44d26;
+  color: white;
+  border: none;
+  padding: 12px 25px; /* More padding for contact button */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600; /* Slightly bolder contact text */
+}
+
+.header .contact-button button:hover {
+  background-color: #c83b1a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .header .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header .logo,
+  .header .navigation,
+  .header .search-box,
+  .header .contact-button {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .header .navigation ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header .navigation li {
+    margin: 10px 0;
+  }
+
+  .header .search-box {
+    justify-content: center;
+    margin-left: 0; /* Reset margin */
+  }
+
+  .header .search-box input[type="text"] {
+    width: 100%; /* Full width search input on smaller screens */
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+  }
+
+  .header .search-box button {
+    border-radius: 0 0 5px 5px;
+    width: 100%; /* Full width search button */
+  }
+
+  .header .contact-button {
+    margin-left: 0; /* Reset margin */
+  }
+}

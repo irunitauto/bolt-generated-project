@@ -1,0 +1,39 @@
+.category-section {
+  padding: 50px 0; /* Increased padding */
+  background-color: #f9f9f9;
+}
+
+.category-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.category-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 35px; /* Increased margin */
+  font-size: 2.2rem; /* Larger title */
+  font-weight: 700; /* Bold title */
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center; /* Center grid items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+@media (max-width: 768px) {
+  .category-section {
+    padding: 40px 0; /* Adjusted padding for smaller screens */
+  }
+
+  .category-section h2 {
+    font-size: 2rem; /* Adjusted title size */
+    margin-bottom: 25px; /* Adjusted margin */
+  }
+
+  .category-grid {
+    justify-content: space-around; /* Distribute cards on smaller screens */
+  }
+}
